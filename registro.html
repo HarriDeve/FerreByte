@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    
+    <form action="">
+        <input type="text" value="1/06/2022" readonly>
+        <br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" placeholder="Escriba su nombre" required maxlength="15" minlength="10" size="30">
+        <br><br>
+        <label for="nombre">Apellidos:</label>
+        <input type="text" placeholder="Escriba sus apellidos" required size="30" minlength="15" maxlength="30">
+        <br><br>
+        <label for="Identificacion">Identificacion</label>
+        <input type="number" placeholder="Escriba su numero de Identificacion" required maxlength="10" minlength="10" size="30" step="">
+        <br><br>
+        <label for="Tipo de identificacion">Tipo de identificacion</label>
+        <select name="tipoIdentificacion" id="">
+            <option value="123">Cedula de ciudadania</option>
+            <option value="456">Tarjeta de Identidad</option>
+            <option value="789">Registro unico de Nacimiento</option>
+        </select>
+        <br><br>
+
+        <label for="componentes">Selecciones los componentes a Matricular:</label>
+        <input type="checkbox" name="componenteA" id="componenteA">Algoritmos
+        <input type="checkbox" name="ComponenteW" id="componentesW">Diseño web
+        <input type="checkbox" name="ComponenteD" id="ComponenteD">.Net
+        <input type="checkbox" name="ComponenteI" id="ComponenteI">Ingles
+        <br><br>
+
+        <label for="fase">Seleccione la Fase:</label>
+        <input type="radio" name="fase" id="fase1">Fase1
+        <input type="radio" name="fase" id="fase2">Fase2
+        <input type="radio" name="fase" id="fase3">Fase3
+        <br><br>
+
+        <label for="imgen">Foto de Perfil</label>
+        <input type="file" name="archivo" id="archivo" accept=".pdf" multiple>
+        <br><br>
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" id="Email">
+        <br><br>
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="601 5555555" pattern="[0-9]{10}">
+        <br><br>
+        <label for="nacimiento">Fecha Nacimiento</label>
+        <input type="date" name="fehca" id="fecha" min="2022-06-10" max="2022-07-12">
+        <br><br>
+        <label for="Hora">Hora:</label>
+        <input type="time" name="hora" id="hora">
+        <br><br>
+        <label for="color">Escoja un color</label>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" name="" id="">
+        <br><br>
+        <h2>Comentarios de Registro</h2>
+        <textarea name="Comentarios" id="" cols="30" rows="10">Escriba sus comentarios</textarea>
+
+
+        <br><br>
+        <input type="submit" value="Registrar">
+        <input type="reset" value="Cancelar">
+
+    </form>
+
+</body>
+</html>
